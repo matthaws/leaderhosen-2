@@ -8,7 +8,6 @@ import "./App.css";
 
 class App extends Component {
   render() {
-    debugger;
     if (this.props.data.loading) {
       return <div>Loading</div>;
     }

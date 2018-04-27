@@ -18,8 +18,8 @@ class Login extends React.Component {
   };
 
   componentDidMount() {
-    this.lock.on("authenticaed", authResult => {
-      window.localStorage.setItem("auth0IdToken", authResult.idToken);
+    this.lock.on("authenticated", authResult => {
+      window.localStorage.setItem("auth0IdToken", authResult.accessToken);
       this.props.history.push("/signup");
     });
   }
